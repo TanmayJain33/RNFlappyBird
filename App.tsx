@@ -1,11 +1,16 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
+import entities from './src/entities';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <GameEngine style={styles.gameEngine}></GameEngine>
+      <GameEngine
+        style={styles.gameEngine}
+        //adding the bird using entities prop
+        entities={entities()}
+      />
     </SafeAreaView>
   );
 }
