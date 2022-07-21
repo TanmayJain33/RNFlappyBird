@@ -1,6 +1,11 @@
 import Matter from 'matter-js';
+import {Dimensions} from 'react-native';
 import Bird from '../components/Bird';
+import Floor from '../components/Floor';
 //Matter is used to add physics in the game like gravity
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default function restart() {
   //instance of engine
@@ -15,5 +20,11 @@ export default function restart() {
     physics: {engine, world},
     //adding the bird component to the world
     Bird: Bird(world, 'green', {x: 50, y: 300}, {height: 40, width: 40}),
+    Floor: Floor(
+      world,
+      'green',
+      {x: windowWidth / 2, y: windowHeight},
+      {height: 50, width: windowWidth},
+    ),
   };
 }
