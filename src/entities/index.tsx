@@ -23,8 +23,7 @@ export default function restart() {
 
   return {
     physics: {engine, world},
-    //adding the bird component to the world
-    Bird: Bird(world, 'green', {x: 50, y: 300}, {height: 40, width: 40}),
+    Bird: Bird(world, {x: 60, y: 300}, {height: 42, width: 52}),
     ObstacleTop1: Obstacle(
       world,
       'ObstacleTop1',
