@@ -1,5 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
+import {
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
 import entities from './src/entities';
 import Physics from './src/physics/physics';
@@ -11,11 +18,18 @@ export default function App() {
   const game_engine = useRef(null);
   //falling the bird when it is loaded
   useEffect(() => {
-    setRunning(true);
+    setRunning(false);
   }, []);
+
+  const resetGame = () => {
+    game_engine.current.swap(entities());
+    setCurrentPoints(0);
+    setRunning(true);
+  };
 
   return (
     <SafeAreaView style={styles.mainContainer}>
+      <Text style={styles.points}>{currentPoints}</Text>
       <GameEngine
         ref={game_engine}
         //stopping the bird to fall when app starts
@@ -30,14 +44,21 @@ export default function App() {
           switch (e) {
             case 'game-over':
               setRunning(false);
-              setCurrentPoints(0);
               break;
             case 'new-point':
               setCurrentPoints(currentPoints + 1);
               break;
           }
-        }}
-      />
+        }}>
+        <StatusBar hidden={true} />
+      </GameEngine>
+      {!running ? (
+        <View style={styles.btn}>
+          <TouchableOpacity style={styles.btnContainer} onPress={resetGame}>
+            <Text style={styles.btnText}>START GAME</Text>
+          </TouchableOpacity>
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 }
@@ -45,4 +66,12 @@ export default function App() {
 const styles = StyleSheet.create({
   mainContainer: {flex: 1},
   gameEngine: {position: 'absolute', top: 0, bottom: 0, left: 0, right: 0},
+  points: {textAlign: 'center', fontSize: 40, fontWeight: '700', margin: 20},
+  btn: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+  btnContainer: {
+    backgroundColor: '#000',
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+  },
+  btnText: {fontWeight: '700', color: '#fff', fontSize: 20},
 });
