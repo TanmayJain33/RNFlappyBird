@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
 import entities from './src/entities';
@@ -6,7 +6,7 @@ import Physics from './src/physics/physics';
 
 export default function App() {
   const [running, setRunning] = useState(false);
-
+  const game_engine = useRef(null);
   //falling the bird when it is loaded
   useEffect(() => {
     setRunning(true);
@@ -15,6 +15,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.mainContainer}>
       <GameEngine
+        ref={game_engine}
         //stopping the bird to fall when app starts
         running={running}
         style={styles.gameEngine}
@@ -22,6 +23,14 @@ export default function App() {
         entities={entities()}
         //adding systems using systems prop
         systems={[Physics]}
+        //receiving the game over / collision
+        onEvent={(e: any) => {
+          switch (e) {
+            case 'game-over':
+              setRunning(false);
+              return;
+          }
+        }}
       />
     </SafeAreaView>
   );

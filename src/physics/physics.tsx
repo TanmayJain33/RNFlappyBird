@@ -57,6 +57,12 @@ function Physics(
       y: 0,
     });
   }
+  //detecting collisions
+  //'collisionStart' is the type of event that will be triggered when there is a collision
+  //function will trigger when collision is detected
+  Matter.Events.on(engine, 'collisionStart', () => {
+    dispatch('game-over');
+  });
   //returning updated entities
   return entities;
 }
