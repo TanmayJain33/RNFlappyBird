@@ -14,7 +14,7 @@ function Physics(
     [x: string]: any;
     physics: {engine: any};
   },
-  {touches, time}: any,
+  {touches, time, dispatch}: any,
 ) {
   //getting the engine from entities
   let engine = entities.physics.engine;
@@ -36,6 +36,15 @@ function Physics(
   Matter.Engine.update(engine, time.delta);
   //moving the obstacles in horizontal direction to the left
   for (let index = 1; index <= 2; index++) {
+    //setting the score when obstacle passes the bird
+    if (
+      entities[`ObstacleTop${index}`].body.bounds.max.x <= 50 &&
+      !entities[`ObstacleTop${index}`].point
+    ) {
+      entities[`ObstacleTop${index}`].point = true;
+      dispatch('new-point');
+    }
+
     //obstacles must return to their initial position if they are moved out of the screen
     if (entities[`ObstacleTop${index}`].body.bounds.max.x <= 0) {
       const pipeSizePos = getPipeSizePosPair(windowWidth * 0.9);

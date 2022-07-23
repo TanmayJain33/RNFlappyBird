@@ -6,6 +6,8 @@ import Physics from './src/physics/physics';
 
 export default function App() {
   const [running, setRunning] = useState(false);
+  //to display scrore
+  const [currentPoints, setCurrentPoints] = useState(0);
   const game_engine = useRef(null);
   //falling the bird when it is loaded
   useEffect(() => {
@@ -28,7 +30,11 @@ export default function App() {
           switch (e) {
             case 'game-over':
               setRunning(false);
-              return;
+              setCurrentPoints(0);
+              break;
+            case 'new-point':
+              setCurrentPoints(currentPoints + 1);
+              break;
           }
         }}
       />
