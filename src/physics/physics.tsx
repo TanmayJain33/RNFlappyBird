@@ -1,4 +1,8 @@
 import Matter from 'matter-js';
+import {getPipeSizePosPair} from '../utils/random';
+import {Dimensions} from 'react-native';
+
+const windowWidth = Dimensions.get('window').width;
 
 //Adding physics to the project
 //first entities are passed which includes all the components
@@ -30,6 +34,29 @@ function Physics(
   //trigger an update of the engine
   //time.delta is the difference between current and previous time
   Matter.Engine.update(engine, time.delta);
+  //moving the obstacles in horizontal direction to the left
+  for (let index = 1; index <= 2; index++) {
+    //obstacles must return to their initial position if they are moved out of the screen
+    if (entities[`ObstacleTop${index}`].body.bounds.max.x <= 0) {
+      const pipeSizePos = getPipeSizePosPair(windowWidth * 0.9);
+      //setting the initial position to the obstacles
+      Matter.Body.setPosition(
+        entities[`ObstacleTop${index}`].body,
+        pipeSizePos.pipeTop.position,
+      );
+      Matter.Body.setPosition(
+        entities[`ObstacleBottom${index}`].body,
+        pipeSizePos.pipeBottom.position,
+      );
+    }
+    //moving the top obstacle in horizontal direction to the left
+    Matter.Body.translate(entities[`ObstacleTop${index}`].body, {x: -3, y: 0});
+    //moving the bottom obstacle in horizontal direction to the left
+    Matter.Body.translate(entities[`ObstacleBottom${index}`].body, {
+      x: -3,
+      y: 0,
+    });
+  }
   //returning updated entities
   return entities;
 }
