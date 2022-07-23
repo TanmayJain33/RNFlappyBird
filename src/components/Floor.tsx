@@ -1,13 +1,13 @@
 import Matter from 'matter-js';
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
+import Images from '../../assets/images';
 
 const Floor = (props: {
   body: {
     bounds: {max: {x: number; y: number}; min: {x: number; y: number}};
     position: {x: number; y: number};
   };
-  color: any;
 }) => {
   //getting the max and min value of x/width within the rectangle body
   const widthBody = props.body.bounds.max.x - props.body.bounds.min.x;
@@ -18,19 +18,19 @@ const Floor = (props: {
   const xBody = props.body.position.x - widthBody / 2;
   const yBody = props.body.position.y - heightBody / 2;
 
-  //getting the color of body
-  const color = props.color;
-
   return (
-    <View
-      style={styles(color, xBody, yBody, widthBody, heightBody).floorStyle}
-    />
+    <View style={styles(xBody, yBody, widthBody, heightBody).floorStyle}>
+      <Image
+        source={Images.floor}
+        resizeMode="repeat"
+        style={styles(xBody, yBody, widthBody, heightBody).floorImage}
+      />
+    </View>
   );
 };
 
 export default (
   world: Matter.World,
-  color: String,
   position: {x: number; y: number},
   size: {width: number; height: number},
 ) => {
@@ -53,7 +53,6 @@ export default (
 
   return {
     body: initialFloor,
-    color,
     position,
     renderer: (
       <Floor
@@ -73,14 +72,12 @@ export default (
             y: 0,
           },
         }}
-        color={undefined}
       />
     ),
   };
 };
 
 const styles = (
-  color: any,
   xBody: number,
   yBody: number,
   widthBody: number,
@@ -88,10 +85,13 @@ const styles = (
 ) =>
   StyleSheet.create({
     floorStyle: {
-      backgroundColor: color,
       position: 'absolute',
       left: xBody,
       top: yBody,
+      width: widthBody,
+      height: heightBody,
+    },
+    floorImage: {
       width: widthBody,
       height: heightBody,
     },

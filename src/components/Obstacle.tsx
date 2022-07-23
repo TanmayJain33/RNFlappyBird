@@ -1,13 +1,13 @@
 import Matter from 'matter-js';
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
+import Images from '../../assets/images';
 
 const Obstacle = (props: {
   body: {
     bounds: {max: {x: number; y: number}; min: {x: number; y: number}};
     position: {x: number; y: number};
   };
-  color: any;
 }) => {
   //getting the max and min value of x/width within the rectangle body
   const widthBody = props.body.bounds.max.x - props.body.bounds.min.x;
@@ -18,20 +18,20 @@ const Obstacle = (props: {
   const xBody = props.body.position.x - widthBody / 2;
   const yBody = props.body.position.y - heightBody / 2;
 
-  //getting the color of body
-  const color = props.color;
-
   return (
-    <View
-      style={styles(color, xBody, yBody, widthBody, heightBody).obstacleStyle}
-    />
+    <View style={styles(xBody, yBody, widthBody, heightBody).obstacleStyle}>
+      <Image
+        source={Images.pipeCore}
+        resizeMode="repeat"
+        style={styles(xBody, yBody, widthBody, heightBody).obstacleImage}
+      />
+    </View>
   );
 };
 
 export default (
   world: Matter.World,
   label: any,
-  color: String,
   position: {x: number; y: number},
   size: {width: number; height: number},
 ) => {
@@ -50,7 +50,6 @@ export default (
 
   return {
     body: initialObstacle,
-    color,
     position,
     renderer: (
       <Obstacle
@@ -70,14 +69,12 @@ export default (
             y: 0,
           },
         }}
-        color={undefined}
       />
     ),
   };
 };
 
 const styles = (
-  color: any,
   xBody: number,
   yBody: number,
   widthBody: number,
@@ -85,12 +82,16 @@ const styles = (
 ) =>
   StyleSheet.create({
     obstacleStyle: {
-      borderWidth: 1,
-      borderColor: color,
-      borderStyle: 'solid',
       position: 'absolute',
       left: xBody,
       top: yBody,
+      width: widthBody,
+      height: heightBody,
+    },
+    obstacleImage: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
       width: widthBody,
       height: heightBody,
     },

@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {
+  Image,
   SafeAreaView,
   StatusBar,
   StyleSheet,
@@ -8,8 +9,13 @@ import {
   View,
 } from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
+import Images from './assets/images';
 import entities from './src/entities';
 import Physics from './src/physics/physics';
+import {Dimensions} from 'react-native';
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default function App() {
   const [running, setRunning] = useState(false);
@@ -29,6 +35,11 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
+      <Image
+        source={Images.background}
+        style={styles.backgroundImage}
+        resizeMode="stretch"
+      />
       <Text style={styles.points}>{currentPoints}</Text>
       <GameEngine
         ref={game_engine}
@@ -66,7 +77,13 @@ export default function App() {
 const styles = StyleSheet.create({
   mainContainer: {flex: 1},
   gameEngine: {position: 'absolute', top: 0, bottom: 0, left: 0, right: 0},
-  points: {textAlign: 'center', fontSize: 40, fontWeight: '700', margin: 20},
+  points: {
+    textAlign: 'center',
+    fontSize: 72,
+    fontWeight: '700',
+    margin: 20,
+    color: '#fff',
+  },
   btn: {flex: 1, justifyContent: 'center', alignItems: 'center'},
   btnContainer: {
     backgroundColor: '#000',
@@ -74,4 +91,13 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   btnText: {fontWeight: '700', color: '#fff', fontSize: 20},
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    width: windowWidth,
+    height: windowHeight,
+  },
 });

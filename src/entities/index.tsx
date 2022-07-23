@@ -27,36 +27,31 @@ export default function restart() {
     ObstacleTop1: Obstacle(
       world,
       'ObstacleTop1',
-      'red',
       pipeSizePosA.pipeTop.position,
       pipeSizePosA.pipeTop.size,
     ),
     ObstacleBottom1: Obstacle(
       world,
       'ObstacleBottom1',
-      'blue',
       pipeSizePosA.pipeBottom.position,
       pipeSizePosA.pipeBottom.size,
     ),
     ObstacleTop2: Obstacle(
       world,
       'ObstacleTop2',
-      'red',
       pipeSizePosB.pipeTop.position,
       pipeSizePosB.pipeTop.size,
     ),
     ObstacleBottom2: Obstacle(
       world,
       'ObstacleBottom2',
-      'blue',
       pipeSizePosB.pipeBottom.position,
       pipeSizePosB.pipeBottom.size,
     ),
     Floor: Floor(
       world,
-      'green',
       {x: windowWidth / 2, y: windowHeight},
-      {height: 50, width: windowWidth},
+      {height: 230, width: windowWidth},
     ),
   };
 }
