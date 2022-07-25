@@ -7,12 +7,22 @@
     "ios": "react-native run-ios --simulator=\"iPhone SE (2nd generation)\"",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "dev-android": "react-native run-android --variant=devDebug --appIdSuffix dev",
+    "dev-android-release-variant": "react-native run-android --variant=devRelease --appIdSuffix dev",
+    "dev-android-release": "cd android && ./gradlew clean && ./gradlew assembleDevRelease",
+    "staging-android": "react-native run-android --variant=stagingDebug --appIdSuffix staging",
+    "staging-android-release-variant": "react-native run-android --variant=stagingRelease --appIdSuffix staging",
+    "staging-android-release": "cd android && ./gradlew clean && ./gradlew assembleStagingRelease",
+    "production-android": "react-native run-android --variant=productionDebug --appIdSuffix production",
+    "production-android-release-variant": "react-native run-android --variant=productionRelease --appIdSuffix production",
+    "production-android-release": "cd android && ./gradlew clean && ./gradlew assembleProductionRelease"
   },
   "dependencies": {
     "matter-js": "^0.18.0",
     "react": "18.0.0",
     "react-native": "0.69.1",
+    "react-native-config": "^1.4.6",
     "react-native-game-engine": "^1.2.0"
   },
   "devDependencies": {

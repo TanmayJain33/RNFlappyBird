@@ -1,5 +1,19 @@
 apply plugin: "com.android.application"
 
+project.ext.envConfigFiles = [
+    release: '.env.dev',
+    debug: '.env.dev',
+    devrelease: '.env.dev',
+    devdebug: '.env.dev',
+    stagingrelease: '.env.staging',
+    stagingdebug: '.env.staging',
+    productionrelease: '.env.production',
+    productiondebug: '.env.production',
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + '/dotenv.gradle'
+
+
 import com.android.build.OutputFile
 
 /**
@@ -132,6 +146,35 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
+
+    flavorDimensions 'default'
+
+    productFlavors {
+        dev {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.rnflappybird.dev"        
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            versionCode 1
+            versionName "1.0"
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.rnflappybird.staging"        
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            versionCode 1
+            versionName "1.0"
+        }
+        production {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.rnflappybird.production"        
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            versionCode 1
+            versionName "1.0"
+        }
+    }
 
     defaultConfig {
         applicationId "com.rnflappybird"
