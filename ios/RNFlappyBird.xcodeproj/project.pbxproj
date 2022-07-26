@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNFlappyBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNFlappyBirdTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-RNFlappyBird.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNFlappyBird.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-RNFlappyBird-RNFlappyBirdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNFlappyBird-RNFlappyBirdTests.a */; };
+		1850C780288FD425001C2ADE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		1850C781288FD425001C2ADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1850C785288FD425001C2ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1850C786288FD425001C2ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1850C793288FD44C001C2ADE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		1850C794288FD44C001C2ADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1850C798288FD44C001C2ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1850C799288FD44C001C2ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1850C7B9288FD508001C2ADE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		1850C7BA288FD508001C2ADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1850C7BE288FD508001C2ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		1850C7BF288FD508001C2ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1B1A813ED492E92EC5333092 /* libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE5F0D0202D674FC84E51D4 /* libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a */; };
+		6E850FE5AC02BBE444ADAE2B /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B31A6738CFAE5D43860C31 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9BBB491AC5C5E93977B2BD9D /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EADC4F8F56F10BD2BAAFE39 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a */; };
+		FD4D20426C2F5456BBF5F374 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4891292008C93F3756D9AB7D /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +44,33 @@
 		00E356EE1AD99517003FC87E /* RNFlappyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNFlappyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNFlappyBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFlappyBirdTests.m; sourceTree = "<group>"; };
+		06ED1C157FF72A543CA0B1AA /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RNFlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNFlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNFlappyBird/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RNFlappyBird/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNFlappyBird/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNFlappyBird/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNFlappyBird/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNFlappyBird-RNFlappyBirdTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBird-RNFlappyBirdTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-RNFlappyBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBird.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-RNFlappyBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBird.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird.release.xcconfig"; sourceTree = "<group>"; };
+		1850C78D288FD425001C2ADE /* RNFlappyBird Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNFlappyBird Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1850C78E288FD425001C2ADE /* RNFlappyBird Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNFlappyBird Dev-Info.plist"; path = "/Users/apple/Desktop/RNFlappyBird/ios/RNFlappyBird Dev-Info.plist"; sourceTree = "<absolute>"; };
+		1850C7A0288FD44C001C2ADE /* RNFlappyBird Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNFlappyBird Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1850C7A1288FD44C001C2ADE /* RNFlappyBird Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNFlappyBird Staging-Info.plist"; path = "/Users/apple/Desktop/RNFlappyBird/ios/RNFlappyBird Staging-Info.plist"; sourceTree = "<absolute>"; };
+		1850C7B4288FD456001C2ADE /* RNFlappyBird Production-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNFlappyBird Production-Info.plist"; path = "/Users/apple/Desktop/RNFlappyBird/ios/RNFlappyBird Production-Info.plist"; sourceTree = "<absolute>"; };
+		1850C7C6288FD508001C2ADE /* RNFlappyBird Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNFlappyBird Production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4E0765FA2FEE502F394CCB /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36B31A6738CFAE5D43860C31 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4891292008C93F3756D9AB7D /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNFlappyBird-RNFlappyBirdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBird-RNFlappyBirdTests.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-RNFlappyBird.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBird.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB66605929C9AA1355CC4DC /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE5F0D0202D674FC84E51D4 /* libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0F7F5E48136B5D535C4461 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.debug.xcconfig"; sourceTree = "<group>"; };
+		7EADC4F8F56F10BD2BAAFE39 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNFlappyBird/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNFlappyBird-RNFlappyBirdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBird-RNFlappyBirdTests.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8CBDF4D0C6B5793A15FB368 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.debug.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.debug.xcconfig"; sourceTree = "<group>"; };
+		B3CEE576A89465B3C9694BBE /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.release.xcconfig"; sourceTree = "<group>"; };
+		BA1E6C37D53BBC019B3BD507 /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAB80836479D480780ED505D /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.release.xcconfig"; path = "Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-RNFlappyBird-RNFlappyBirdTests.a in Frameworks */,
+				1B1A813ED492E92EC5333092 /* libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +87,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-RNFlappyBird.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C782288FD425001C2ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBB491AC5C5E93977B2BD9D /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C795288FD44C001C2ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E850FE5AC02BBE444ADAE2B /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C7BB288FD508001C2ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4D20426C2F5456BBF5F374 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-RNFlappyBird.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNFlappyBird-RNFlappyBirdTests.a */,
+				7EADC4F8F56F10BD2BAAFE39 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Dev.a */,
+				4891292008C93F3756D9AB7D /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Production.a */,
+				36B31A6738CFAE5D43860C31 /* libPods-RNFlappyBirdCommonPods-RNFlappyBird Staging.a */,
+				6BE5F0D0202D674FC84E51D4 /* libPods-RNFlappyBirdCommonPods-RNFlappyBirdTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +175,9 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				1850C78E288FD425001C2ADE /* RNFlappyBird Dev-Info.plist */,
+				1850C7A1288FD44C001C2ADE /* RNFlappyBird Staging-Info.plist */,
+				1850C7B4288FD456001C2ADE /* RNFlappyBird Production-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -133,6 +189,9 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNFlappyBird.app */,
 				00E356EE1AD99517003FC87E /* RNFlappyBirdTests.xctest */,
+				1850C78D288FD425001C2ADE /* RNFlappyBird Dev.app */,
+				1850C7A0288FD44C001C2ADE /* RNFlappyBird Staging.app */,
+				1850C7C6288FD508001C2ADE /* RNFlappyBird Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +199,16 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-RNFlappyBird.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-RNFlappyBird.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-RNFlappyBird-RNFlappyBirdTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-RNFlappyBird-RNFlappyBirdTests.release.xcconfig */,
+				5FB66605929C9AA1355CC4DC /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.debug.xcconfig */,
+				B3CEE576A89465B3C9694BBE /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.release.xcconfig */,
+				6D0F7F5E48136B5D535C4461 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.debug.xcconfig */,
+				06ED1C157FF72A543CA0B1AA /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.release.xcconfig */,
+				A8CBDF4D0C6B5793A15FB368 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.debug.xcconfig */,
+				EAB80836479D480780ED505D /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.release.xcconfig */,
+				1D4E0765FA2FEE502F394CCB /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.debug.xcconfig */,
+				BA1E6C37D53BBC019B3BD507 /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -176,14 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNFlappyBird" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +254,72 @@
 			name = RNFlappyBird;
 			productName = RNFlappyBird;
 			productReference = 13B07F961A680F5B00A75B9A /* RNFlappyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1850C77C288FD425001C2ADE /* RNFlappyBird Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1850C78A288FD425001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Dev" */;
+			buildPhases = (
+				1850C77D288FD425001C2ADE /* [CP] Check Pods Manifest.lock */,
+				1850C77E288FD425001C2ADE /* Start Packager */,
+				1850C77F288FD425001C2ADE /* Sources */,
+				1850C782288FD425001C2ADE /* Frameworks */,
+				1850C784288FD425001C2ADE /* Resources */,
+				1850C787288FD425001C2ADE /* Bundle React Native code and images */,
+				1850C788288FD425001C2ADE /* [CP] Embed Pods Frameworks */,
+				1850C789288FD425001C2ADE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNFlappyBird Dev";
+			productName = RNFlappyBird;
+			productReference = 1850C78D288FD425001C2ADE /* RNFlappyBird Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1850C78F288FD44C001C2ADE /* RNFlappyBird Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1850C79D288FD44C001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Staging" */;
+			buildPhases = (
+				1850C790288FD44C001C2ADE /* [CP] Check Pods Manifest.lock */,
+				1850C791288FD44C001C2ADE /* Start Packager */,
+				1850C792288FD44C001C2ADE /* Sources */,
+				1850C795288FD44C001C2ADE /* Frameworks */,
+				1850C797288FD44C001C2ADE /* Resources */,
+				1850C79A288FD44C001C2ADE /* Bundle React Native code and images */,
+				1850C79B288FD44C001C2ADE /* [CP] Embed Pods Frameworks */,
+				1850C79C288FD44C001C2ADE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNFlappyBird Staging";
+			productName = RNFlappyBird;
+			productReference = 1850C7A0288FD44C001C2ADE /* RNFlappyBird Staging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1850C7B5288FD508001C2ADE /* RNFlappyBird Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1850C7C3288FD508001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Production" */;
+			buildPhases = (
+				1850C7B6288FD508001C2ADE /* [CP] Check Pods Manifest.lock */,
+				1850C7B7288FD508001C2ADE /* Start Packager */,
+				1850C7B8288FD508001C2ADE /* Sources */,
+				1850C7BB288FD508001C2ADE /* Frameworks */,
+				1850C7BD288FD508001C2ADE /* Resources */,
+				1850C7C0288FD508001C2ADE /* Bundle React Native code and images */,
+				1850C7C1288FD508001C2ADE /* [CP] Embed Pods Frameworks */,
+				1850C7C2288FD508001C2ADE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNFlappyBird Production";
+			productName = RNFlappyBird;
+			productReference = 1850C7C6288FD508001C2ADE /* RNFlappyBird Production.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,6 +354,9 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNFlappyBird */,
 				00E356ED1AD99517003FC87E /* RNFlappyBirdTests */,
+				1850C77C288FD425001C2ADE /* RNFlappyBird Dev */,
+				1850C78F288FD44C001C2ADE /* RNFlappyBird Staging */,
+				1850C7B5288FD508001C2ADE /* RNFlappyBird Production */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +375,33 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C784288FD425001C2ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C785288FD425001C2ADE /* LaunchScreen.storyboard in Resources */,
+				1850C786288FD425001C2ADE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C797288FD44C001C2ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C798288FD44C001C2ADE /* LaunchScreen.storyboard in Resources */,
+				1850C799288FD44C001C2ADE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C7BD288FD508001C2ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C7BE288FD508001C2ADE /* LaunchScreen.storyboard in Resources */,
+				1850C7BF288FD508001C2ADE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,21 +424,277 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		1850C77D288FD425001C2ADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C77E288FD425001C2ADE /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C787288FD425001C2ADE /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		1850C788288FD425001C2ADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C789288FD425001C2ADE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev/Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C790288FD44C001C2ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C791288FD44C001C2ADE /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C79A288FD44C001C2ADE /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		1850C79B288FD44C001C2ADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C79C288FD44C001C2ADE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging/Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C7B6288FD508001C2ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C7B7288FD508001C2ADE /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C7C0288FD508001C2ADE /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		1850C7C1288FD508001C2ADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1850C7C2288FD508001C2ADE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production/Pods-RNFlappyBirdCommonPods-RNFlappyBird Production-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -298,29 +712,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBird-RNFlappyBirdTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBird-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,32 +725,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird/Pods-RNFlappyBird-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -367,15 +742,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBird-RNFlappyBirdTests/Pods-RNFlappyBird-RNFlappyBirdTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests/Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -417,6 +792,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1850C77F288FD425001C2ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C780288FD425001C2ADE /* AppDelegate.mm in Sources */,
+				1850C781288FD425001C2ADE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C792288FD44C001C2ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C793288FD44C001C2ADE /* AppDelegate.mm in Sources */,
+				1850C794288FD44C001C2ADE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1850C7B8288FD508001C2ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850C7B9288FD508001C2ADE /* AppDelegate.mm in Sources */,
+				1850C7BA288FD508001C2ADE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -430,7 +832,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNFlappyBird-RNFlappyBirdTests.debug.xcconfig */;
+			baseConfigurationReference = 1D4E0765FA2FEE502F394CCB /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +859,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNFlappyBird-RNFlappyBirdTests.release.xcconfig */;
+			baseConfigurationReference = BA1E6C37D53BBC019B3BD507 /* Pods-RNFlappyBirdCommonPods-RNFlappyBirdTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +883,6 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNFlappyBird.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -507,7 +908,6 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNFlappyBird.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -524,6 +924,156 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNFlappyBird;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1850C78B288FD425001C2ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB66605929C9AA1355CC4DC /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RNFlappyBird Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1850C78C288FD425001C2ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CEE576A89465B3C9694BBE /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RNFlappyBird Dev-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1850C79E288FD44C001C2ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CBDF4D0C6B5793A15FB368 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RNFlappyBird Staging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1850C79F288FD44C001C2ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB80836479D480780ED505D /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Staging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RNFlappyBird Staging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1850C7C4288FD508001C2ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0F7F5E48136B5D535C4461 /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "RNFlappyBird Production-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1850C7C5288FD508001C2ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06ED1C157FF72A543CA0B1AA /* Pods-RNFlappyBirdCommonPods-RNFlappyBird Production.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RNFlappyBird Production-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -683,6 +1233,33 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1850C78A288FD425001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1850C78B288FD425001C2ADE /* Debug */,
+				1850C78C288FD425001C2ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1850C79D288FD44C001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1850C79E288FD44C001C2ADE /* Debug */,
+				1850C79F288FD44C001C2ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1850C7C3288FD508001C2ADE /* Build configuration list for PBXNativeTarget "RNFlappyBird Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1850C7C4288FD508001C2ADE /* Debug */,
+				1850C7C5288FD508001C2ADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
