@@ -18,13 +18,20 @@ const Floor = (props: {
   const xBody = props.body.position.x - widthBody / 2;
   const yBody = props.body.position.y - heightBody / 2;
 
+  const imageIterations = Math.ceil(widthBody / heightBody);
+
   return (
     <View style={styles(xBody, yBody, widthBody, heightBody).floorStyle}>
-      <Image
-        source={Images.floor}
-        resizeMode="repeat"
-        style={styles(xBody, yBody, widthBody, heightBody).floorImage}
-      />
+      {Array.apply(null, Array(imageIterations)).map((el, idx) => {
+        return (
+          <Image
+            source={Images.floor}
+            key={idx}
+            resizeMode="stretch"
+            style={styles(xBody, yBody, widthBody, heightBody).floorImage}
+          />
+        );
+      })}
     </View>
   );
 };
@@ -90,6 +97,8 @@ const styles = (
       top: yBody,
       width: widthBody,
       height: heightBody,
+      overflow: 'hidden',
+      flexDirection: 'row',
     },
     floorImage: {
       width: widthBody,

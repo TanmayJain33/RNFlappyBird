@@ -38,7 +38,8 @@ function Physics(
   for (let index = 1; index <= 2; index++) {
     //setting the score when obstacle passes the bird
     if (
-      entities[`ObstacleTop${index}`].body.bounds.max.x <= 50 &&
+      entities[`ObstacleTop${index}`].body.bounds.max.x <
+        entities.Bird.body.bounds.max.x &&
       !entities[`ObstacleTop${index}`].point
     ) {
       entities[`ObstacleTop${index}`].point = true;

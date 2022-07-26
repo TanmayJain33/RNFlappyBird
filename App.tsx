@@ -78,11 +78,14 @@ const styles = StyleSheet.create({
   mainContainer: {flex: 1},
   gameEngine: {position: 'absolute', top: 0, bottom: 0, left: 0, right: 0},
   points: {
-    textAlign: 'center',
-    fontSize: 72,
-    fontWeight: '700',
-    margin: 20,
     color: '#fff',
+    fontSize: 72,
+    position: 'absolute',
+    top: 50,
+    left: windowWidth / 2 - 24,
+    textShadowColor: '#222',
+    textShadowRadius: 2,
+    textShadowOffset: {width: 2, height: 2},
   },
   btn: {flex: 1, justifyContent: 'center', alignItems: 'center'},
   btnContainer: {

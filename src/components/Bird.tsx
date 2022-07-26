@@ -22,6 +22,7 @@ const Bird = (props: {
     <View style={styles(xBody, yBody, widthBody, heightBody).birdStyle}>
       <Image
         source={Images.bird1}
+        resizeMode="stretch"
         style={styles(xBody, yBody, widthBody, heightBody).birdImage}
       />
     </View>

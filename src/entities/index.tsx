@@ -23,7 +23,11 @@ export default function restart() {
 
   return {
     physics: {engine, world},
-    Bird: Bird(world, {x: 60, y: 300}, {height: 42, width: 52}),
+    Bird: Bird(
+      world,
+      {x: windowWidth / 2, y: windowHeight / 2},
+      {height: 41, width: 50},
+    ),
     ObstacleTop1: Obstacle(
       world,
       'ObstacleTop1',
