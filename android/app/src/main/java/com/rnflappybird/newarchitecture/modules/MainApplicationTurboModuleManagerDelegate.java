@@ -1,4 +1,4 @@
-package com.rnflappybird.newarchitecture.modules;
+package com.crownstack.app.rnflappybird.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

@@ -1,4 +1,4 @@
-package com.rnflappybird;
+package com.crownstack.app.rnflappybird;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

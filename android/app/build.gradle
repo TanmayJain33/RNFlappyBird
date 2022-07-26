@@ -152,32 +152,32 @@ android {
     productFlavors {
         dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rnflappybird.dev"        
+            applicationId "com.crownstack.app.rnflappybird.dev"        
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            resValue 'string', 'build_config_package', 'com.crownstack.app.rnflappybird'
             versionCode 1
             versionName "1.0"
         }
         staging {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rnflappybird.staging"        
+            applicationId "com.crownstack.app.rnflappybird.staging"        
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            resValue 'string', 'build_config_package', 'com.crownstack.app.rnflappybird'
             versionCode 1
             versionName "1.0"
         }
         production {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.rnflappybird.production"        
+            applicationId "com.crownstack.app.rnflappybird.production"        
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue 'string', 'build_config_package', 'com.rnflappybird'
+            resValue 'string', 'build_config_package', 'com.crownstack.app.rnflappybird'
             versionCode 1
             versionName "1.0"
         }
     }
 
     defaultConfig {
-        applicationId "com.rnflappybird"
+        applicationId "com.crownstack.app.rnflappybird"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

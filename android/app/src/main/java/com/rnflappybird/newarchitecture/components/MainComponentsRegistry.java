@@ -1,4 +1,4 @@
-package com.rnflappybird.newarchitecture.components;
+package com.crownstack.app.rnflappybird.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
